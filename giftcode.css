@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+div {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    align-self: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.svg-nfLogo .svg-icon-netflix-logo {
+    height: 45px;
+    width: 167px;
+    vertical-align: middle;
+}
+
+.svg-nfLogo.signupBasicHeader {
+    margin-left: 3%;
+}
+
+.svg-nfLogo {
+    text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.buttons {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    color: #333;
+    font-weight: 700;
+    float: right;
+    line-height: 90px;
+    margin: 0 3%;
+}
+
+a.buttons:hover {
+    text-decoration: underline;
+}
+
+.navbar .buttons {
+    text-decoration: none;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.logo img {
+    margin-left: 3%;
+    text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+}
+
+.site-footer-wrapper {
+    opacity: 1;
+    margin-top: 0;
+    background-color: #f3f3f3;
+}
+
+.site-footer {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+}
+
+.footer-divider {
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-top {
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.footer-top-a {
+    color: #757575;
+}
+
+a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.site-footer-wrapper {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    min-width: 190px;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+}
+
+ul.structural {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links {
+    max-width: 1000px;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-link-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.footer-links {
+    max-width: 1000px;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer-link {
+    color: #757575;
+}
+
+.lang-selection-container {
+    display: inline-block;
+}
+
+.nfSelectWrapper .selectArrow,
+.nfSelectWrapper.selectArrow {
+    display: inline-block;
+    width: 100%;
+}
+
+.nfSelectWrapper {
+    display: inline-block;
+    position: relative;
+    max-width: 500px;
+}
+
+.nfSelectWrapper .selectArrow.prefix .nfSelectPlacement.globe::before,
+.nfSelectWrapper.selectArrow.prefix .nfSelectPlacement.globe::before {
+    content: '\e896';
+}
+
+.nfSelectWrapper .selectArrow .nfSelectPlacement,
+.nfSelectWrapper.selectArrow .nfSelectPlacement {
+    position: relative;
+}
+
+#appMountPoint .simpleContainer {
+    padding-bottom: 95px;
+}
+
+.basicLayout.simplicity .simpleContainer {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+div.basicLayout .nfHeader,
+div.basicLayout .simpleContainer {
+    background-color: #fff;
+}
+
+.simpleContainer {
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div.basicLayout .centerContainer {
+    --layout-container-side-padding: 32px;
+    padding: 20px 32px 60px;
+    padding: 20px var(--layout-container-side-padding) 60px;
+}
+
+.centerContainer.firstLoad {
+    display: block;
+}
+
+.centerContainer {
+    overflow: hidden;
+    display: none;
+}
+
+.centerContainer {
+    margin: 0 auto 15px;
+    padding: 20px 3% 60px;
+    max-width: 978px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.basicLayout .planContainer,
+div.basicLayout .regContainer,
+div.basicLayout .verifyCardContainer {
+    max-width: 340px;
+}
+
+.planContainer,
+.regContainer,
+.verifyCardContainer,
+.verifyCardPageContainer {
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+div.basicLayout .stepLogoContainer {
+    display: inline-block;
+}
+
+.basicLayout.simplicity .simpleContainer {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+div.basicLayout .nfHeader,
+div.basicLayout .simpleContainer {
+    background-color: #fff;
+}
+
+.simpleContainer {
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div.basicLayout .stepLogoContainer .stepLogo {
+    margin: 100px 0 20px;
+}
+
+div.basicLayout .regStepLogo {
+    width: 260px;
+}
+
+div.basicLayout .paymentContainer .contextBody,
+div.basicLayout .planContainer .contextBody,
+div.basicLayout .regContainer .contextBody,
+div.basicLayout .verifyCardContainer .contextBody {
+    margin: 0;
+    font-size: 17px;
+}
+
+.planContainer .contextRow,
+.regContainer .contextRow,
+.verifyCardContainer .contextRow,
+.verifyCardPageContainer .contextRow {
+    max-width: 300px;
+    display: inline-block;
+}
+
+div.basicLayout .nf-btn-primary,
+div.basicLayout .nf-btn-secondary {
+    min-height: 48px;
+    font-weight: 400;
+    font-size: 17px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.nf-btn.nf-btn-oversize {
+    font-size: 19px;
+    padding: .75rem 25.33333333px;
+    min-width: 110px;
+    min-height: 60px;
+    width: 100%;
+    line-height: 19px;
+}
+
+.nf-btn-solid.nf-btn-primary,
+.nf-btn-twotone.nf-btn-primary {
+    color: #fff;
+    background-color: #e50914;
+}
+
+.nf-btn {
+    position: relative;
+    font-size: 1rem;
+    padding: .75rem 1.33333333rem;
+    min-width: 74px;
+    min-height: 48px;
+    width: 100%;
+}
+
+div.basicLayout .stepIndicator {
+    text-align: inherit;
+    font-size: 13px;
+}
+
+.stepIndicator {
+    text-align: left;
+}
+
+div.basicLayout .paymentContainer .contextBody,
+div.basicLayout .planContainer .contextBody,
+div.basicLayout .regContainer .contextBody,
+div.basicLayout .verifyCardContainer .contextBody {
+    margin: 0;
+    font-size: 17px;
+}
+
+.stepTitle {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.planContainer .contextBody,
+.regContainer .contextBody,
+.verifyCardContainer .contextBody,
+.verifyCardPageContainer .contextBody {
+    margin: 0;
+    font-size: 19px;
+}
+
+div.basicLayout .contextStep .submitBtnContainer {
+    max-width: 340px;
+}
+
+.simpleContainer .submitBtnContainer {
+    margin-top: 24px;
+}
+
+.submitBtnContainer {
+    text-align: center;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+div.basicLayout .nf-btn-primary,
+div.basicLayout .nf-btn-secondary {
+    min-height: 48px;
+    font-weight: 400;
+    font-size: 17px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.nf-btn.nf-btn-oversize {
+    font-size: 19px;
+    padding: .75rem 25.33333333px;
+    min-width: 110px;
+    min-height: 60px;
+    width: 100%;
+    line-height: 19px;
+}

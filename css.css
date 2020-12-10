@@ -111,7 +111,7 @@ body {
 }
 
 .search {
-    width: 150%;
+    width: 125%;
     background-color: none;
     min-height: 80px;
     display: flex;
@@ -505,4 +505,14 @@ li a {
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+#last-text{
+    font-size:13px;
+    font-weight: lighter;
+}
+
+#email_text{
+    border-width: 10x;
+    color: white;
 }
