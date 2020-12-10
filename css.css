@@ -36,6 +36,19 @@ body {
     margin-right: 70px;
 }
 
+.navbar .buttons {
+    text-decoration: none;
+    margin: 0 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .buttons:nth-child(2) {
+    margin-top: -10px;
+    margin-right: 70px;
+}
+
 .logo img {
     width: 180px;
     display: flex;
