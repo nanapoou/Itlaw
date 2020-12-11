@@ -430,3 +430,272 @@ div.basicLayout .nf-btn-secondary {
     font-size: 13px;
     line-height: 19px;
 }
+
+/******************************* MOBILE COLOR *********************************/
+
+.mobile_color1{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color2{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color3{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color4{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color5{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color6{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color7{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+.mobile_color8{
+    color:blue;
+    fill: blue;
+    border-color: blue;
+}
+
+/******************************** BASIC COLOR *******************************/
+.basic_color1{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color2{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color3{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color4{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color5{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color6{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color7{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color8{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color9{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color10{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color11{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.basic_color12{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+
+/*********************************** STANDARD COLOR ***************************************/
+.standard_color1{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color2{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color3{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color4{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color5{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color6{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color7{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color8{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color9{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color10{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color11{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.standard_color12{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+/**************************** PREMIUM COLOR **************************************/
+
+.premium_color1{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color2{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color3{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color4{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color5{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+.premium_color6{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color7{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+.premium_color8{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color9{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color10{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color11{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}
+
+.premium_color12{
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
+}

@@ -117,28 +117,28 @@
                                     name="planChoice" class="planGrid__selectorInput planGrid__planInput"
                                     id="planGrid_planChoice_0"
                                     data-uia="plan-grid-plan-selector+input-text_1_stream_name" value="114120"><span
-                                    class="planGrid__selectorLabel planGrid__planLabel">Mobile</span></label><label
+                                    class="planGrid__selectorLabel planGrid__planLabel" onclick="change_color(1)" >Mobile</span></label><label
                                 class="planGrid__selectorChoice planGrid__planChoice" for="planGrid_planChoice_1"
                                 data-uia="plan-grid-plan-selector+label-text_1_stream_name"><input type="radio"
                                     name="planChoice" class="planGrid__selectorInput planGrid__planInput"
                                     id="planGrid_planChoice_1"
                                     data-uia="plan-grid-plan-selector+input-text_1_stream_name"
                                     value="53088031314001031"><span
-                                    class="planGrid__selectorLabel planGrid__planLabel">Basic</span></label><label
+                                    class="planGrid__selectorLabel planGrid__planLabel" onclick="change_color(2)">Basic</span></label><label
                                 class="planGrid__selectorChoice planGrid__planChoice" for="planGrid_planChoice_2"
                                 data-uia="plan-grid-plan-selector+label-text_2_stream_name"><input type="radio"
                                     name="planChoice" class="planGrid__selectorInput planGrid__planInput"
                                     id="planGrid_planChoice_2"
                                     data-uia="plan-grid-plan-selector+input-text_2_stream_name"
                                     value="5310803110322"><span
-                                    class="planGrid__selectorLabel planGrid__planLabel">Standard</span></label><label
+                                    class="planGrid__selectorLabel planGrid__planLabel" onclick="change_color(3)">Standard</span></label><label
                                 class="planGrid__selectorChoice planGrid__planChoice" for="planGrid_planChoice_3"
                                 data-uia="plan-grid-plan-selector+label-text_4_stream_name"><input type="radio"
                                     name="planChoice" class="planGrid__selectorInput planGrid__planInput"
                                     id="planGrid_planChoice_3"
                                     data-uia="plan-grid-plan-selector+input-text_4_stream_name" value="10341"
                                     checked=""><span
-                                    class="planGrid__selectorLabel planGrid__planLabel">Premium</span></label></div>
+                                    class="planGrid__selectorLabel planGrid__planLabel" onclick="change_color(4)">Premium</span></label></div>
                     </div>
                     <table class="planGrid__featureTable" role="table" data-uia="plan-grid-feature-table">
                         <caption class="planGrid__featureTableCaption">Netflix Plan Features</caption>
@@ -149,16 +149,16 @@
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--isSelected planGrid__cell--hasIncreasedWeight planGrid__stringCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+planPrice-text_1_stream_name"
-                                    aria-label="Mobile">THB99</td>
+                                    aria-label="Mobile" id="mobile_color1">THB99</td> <!-- Mobile -->
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__stringCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+planPrice-text_1_stream_name"
-                                    aria-label="Basic">THB279</td>
+                                    aria-label="Basic" id="basic_color1">THB279</td> <!-- Basic -->
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__stringCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+planPrice-text_2_stream_name"
-                                    aria-label="Standard">THB349</td>
+                                    aria-label="Standard" id="standard_color1" >THB349</td> <!-- Standard -->
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__stringCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+planPrice-text_4_stream_name"
-                                    aria-label="Premium">THB419</td>
+                                    aria-label="Premium" id="premium_color1">THB419</td> <!-- Premium -->
                             </tr>
                             <tr role="row" class="planGrid__featureTableRow planGrid__featureTableRow--videoQuality">
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__featureCell"
@@ -167,22 +167,22 @@
                                 <td class="planGrid__cell planGrid__cell--isSelected planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+videoQuality-text_1_stream_name"
                                     aria-label="Mobile">
-                                    <div class="planGrid__videoQualityLabel">Good</div>
+                                    <div class="planGrid__videoQualityLabel" id="mobile_color2">Good</div> <!-- Mobile -->
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+videoQuality-text_1_stream_name"
                                     aria-label="Basic">
-                                    <div class="planGrid__videoQualityLabel">Good</div>
+                                    <div class="planGrid__videoQualityLabel" id="basic_color2">Good</div> <!-- Basic -->
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+videoQuality-text_2_stream_name"
                                     aria-label="Standard">
-                                    <div class="planGrid__videoQualityLabel">Better</div>
+                                    <div class="planGrid__videoQualityLabel" id="standard_color2">Better</div> <!-- Standard -->
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+videoQuality-text_4_stream_name"
                                     aria-label="Premium">
-                                    <div class="planGrid__videoQualityLabel">Best</div>
+                                    <div class="planGrid__videoQualityLabel" id="premium_color2">Best</div> <!-- Premium -->
                                 </td>
                             </tr>
                             <tr role="row" class="planGrid__featureTableRow planGrid__featureTableRow--resolution">
@@ -192,22 +192,22 @@
                                 <td class="planGrid__cell planGrid__cell--isSelected planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+resolution-text_1_stream_name"
                                     aria-label="Mobile">
-                                    <div class="planGrid__videoQualityLabel">480p</div>
+                                    <div class="planGrid__videoQualityLabel" id="mobile_color3">480p</div> <!-- Mobile -->
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+resolution-text_1_stream_name"
                                     aria-label="Basic">
-                                    <div class="planGrid__videoQualityLabel">480p</div>
+                                    <div class="planGrid__videoQualityLabel" id="basic_color3">480p</div> <!-- Basic -->
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+resolution-text_2_stream_name"
                                     aria-label="Standard">
-                                    <div class="planGrid__videoQualityLabel">1080p</div>
+                                    <div class="planGrid__videoQualityLabel" id="standard_color3">1080p</div> <!-- Standard -->
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__videoQualityCell"
                                     role="cell" data-uia="plan-grid-feature-table-cell+resolution-text_4_stream_name"
                                     aria-label="Premium">
-                                    <div class="planGrid__videoQualityLabel">4K+HDR</div>
+                                    <div class="planGrid__videoQualityLabel" id="premium_color3">4K+HDR</div> <!-- Premium -->
                                 </td>
                             </tr>
                             <tr role="row"
@@ -218,19 +218,19 @@
                                 <td class="planGrid__cell planGrid__cell--isSelected planGrid__cell--hasIncreasedWeight planGrid__planMaxScreenCountCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+planMaxScreenCount-text_1_stream_name"
-                                    aria-label="Mobile"><span class="planGrid__planMaxScreenCountLabel">1</span></td>
+                                    aria-label="Mobile"><span class="planGrid__planMaxScreenCountLabel" id="mobile_color4">1</span></td> <!-- Mobile -->
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__planMaxScreenCountCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+planMaxScreenCount-text_1_stream_name"
-                                    aria-label="Basic"><span class="planGrid__planMaxScreenCountLabel">1</span></td>
+                                    aria-label="Basic"><span class="planGrid__planMaxScreenCountLabel" id="basic_color4">1</span></td> <!-- Basic -->
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__planMaxScreenCountCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+planMaxScreenCount-text_2_stream_name"
-                                    aria-label="Standard"><span class="planGrid__planMaxScreenCountLabel">2</span></td>
+                                    aria-label="Standard"><span class="planGrid__planMaxScreenCountLabel" id="standard_color4">2</span></td> <!-- Standard -->
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__planMaxScreenCountCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+planMaxScreenCount-text_4_stream_name"
-                                    aria-label="Premium"><span class="planGrid__planMaxScreenCountLabel">4</span></td>
+                                    aria-label="Premium"><span class="planGrid__planMaxScreenCountLabel" id="premium_color4">4</span></td> <!-- Premium -->
                             </tr>
                             <tr role="row"
                                 class="planGrid__featureTableRow planGrid__featureTableRow--supportedDevices">
@@ -241,132 +241,131 @@
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+supportedDevices-text_1_stream_name"
                                     aria-label="Mobile">
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="mobile_color5"
                                             focusable="false">
                                             <path
                                                 d="M18,22.0233 L18,4.0003 L8,4.0003 L8,22.0233 L18,22.0233 Z M6,22.9683 L6,3.0543 C6,2.46041082 6.48370624,2.0003 7.057,2.0003 L18.943,2.0003 C19.5162938,2.0003 20,2.46041082 20,3.0543 L20,22.9683 C20,23.5564915 19.5215213,24.0233 18.943,24.0233 L7.057,24.0233 C6.4784787,24.0233 6,23.5564915 6,22.9683 Z M13,18.023 C13.553,18.023 14,18.471 14,19.023 C14,19.575 13.553,20.023 13,20.023 C12.447,20.023 12,19.575 12,19.023 C12,18.471 12.447,18.023 13,18.023 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Phone</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="mobile_color6">Phone</div> <!-- Mobile -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
-                                            focusable="false">
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="mobile_color7" focusable="false" >
                                             <path
                                                 d="M22.0003,19 L22.0003,7 L4.0003,7 L4.0003,19 L22.0003,19 Z M21,13 C21,13.552 20.553,14 20,14 C19.447,14 19,13.552 19,13 C19,12.448 19.447,12 20,12 C20.553,12 21,12.448 21,13 Z M22.9453,21 L3.0543,21 C2.46343187,21 2.0003,20.5190554 2.0003,19.944 L2.0003,6.056 C2.0003,5.48094463 2.46343187,5 3.0543,5 L22.9453,5 C23.5305389,5 24.0003,5.47563312 24.0003,6.056 L24.0003,19.944 C24.0003,20.5243669 23.5305389,21 22.9453,21 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="mobile_color8">Tablet</div> <!-- Mobile -->
                                     </div>
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__supportedDevicesCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+supportedDevices-text_1_stream_name"
                                     aria-label="Basic">
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="basic_color5"
                                             focusable="false">
                                             <path
                                                 d="M18,22.0233 L18,4.0003 L8,4.0003 L8,22.0233 L18,22.0233 Z M6,22.9683 L6,3.0543 C6,2.46041082 6.48370624,2.0003 7.057,2.0003 L18.943,2.0003 C19.5162938,2.0003 20,2.46041082 20,3.0543 L20,22.9683 C20,23.5564915 19.5215213,24.0233 18.943,24.0233 L7.057,24.0233 C6.4784787,24.0233 6,23.5564915 6,22.9683 Z M13,18.023 C13.553,18.023 14,18.471 14,19.023 C14,19.575 13.553,20.023 13,20.023 C12.447,20.023 12,19.575 12,19.023 C12,18.471 12.447,18.023 13,18.023 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Phone</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="basic_color6">Phone</div> <!-- Basic -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="basic_color7"
                                             focusable="false">
                                             <path
                                                 d="M22.0003,19 L22.0003,7 L4.0003,7 L4.0003,19 L22.0003,19 Z M21,13 C21,13.552 20.553,14 20,14 C19.447,14 19,13.552 19,13 C19,12.448 19.447,12 20,12 C20.553,12 21,12.448 21,13 Z M22.9453,21 L3.0543,21 C2.46343187,21 2.0003,20.5190554 2.0003,19.944 L2.0003,6.056 C2.0003,5.48094463 2.46343187,5 3.0543,5 L22.9453,5 C23.5305389,5 24.0003,5.47563312 24.0003,6.056 L24.0003,19.944 C24.0003,20.5243669 23.5305389,21 22.9453,21 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="basic_color8">Tablet</div> <!-- Basic -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="basic_color9"
                                             focusable="false">
                                             <path
                                                 d="M6,7 L6,15 L20,15 L20,7 L6,7 Z M4,5 L22,5 L22,17 L4,17 L4,5 Z M2,19 L24,19 L24,21 L2,21 L2,19 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Computer</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="basic_color10">Computer</div> <!-- Basic -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="basic_color11"
                                             focusable="false">
                                             <path
                                                 d="M9,20 L17,20 L17,22 L9,22 L9,20 Z M4,6 L4,16 L22,16 L22,6 L4,6 Z M2,4 L24,4 L24,18 L2,18 L2,4 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">TV</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="basic_color12">TV</div> <!-- Basic -->
                                     </div>
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__supportedDevicesCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+supportedDevices-text_2_stream_name"
                                     aria-label="Standard">
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="standard_color5"
                                             focusable="false">
                                             <path
                                                 d="M18,22.0233 L18,4.0003 L8,4.0003 L8,22.0233 L18,22.0233 Z M6,22.9683 L6,3.0543 C6,2.46041082 6.48370624,2.0003 7.057,2.0003 L18.943,2.0003 C19.5162938,2.0003 20,2.46041082 20,3.0543 L20,22.9683 C20,23.5564915 19.5215213,24.0233 18.943,24.0233 L7.057,24.0233 C6.4784787,24.0233 6,23.5564915 6,22.9683 Z M13,18.023 C13.553,18.023 14,18.471 14,19.023 C14,19.575 13.553,20.023 13,20.023 C12.447,20.023 12,19.575 12,19.023 C12,18.471 12.447,18.023 13,18.023 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Phone</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="standard_color6">Phone</div> <!-- Standard -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="standard_color7"
                                             focusable="false">
                                             <path
                                                 d="M22.0003,19 L22.0003,7 L4.0003,7 L4.0003,19 L22.0003,19 Z M21,13 C21,13.552 20.553,14 20,14 C19.447,14 19,13.552 19,13 C19,12.448 19.447,12 20,12 C20.553,12 21,12.448 21,13 Z M22.9453,21 L3.0543,21 C2.46343187,21 2.0003,20.5190554 2.0003,19.944 L2.0003,6.056 C2.0003,5.48094463 2.46343187,5 3.0543,5 L22.9453,5 C23.5305389,5 24.0003,5.47563312 24.0003,6.056 L24.0003,19.944 C24.0003,20.5243669 23.5305389,21 22.9453,21 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="standard_color8">Tablet</div> <!-- Standard -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="standard_color9"
                                             focusable="false">
                                             <path
                                                 d="M6,7 L6,15 L20,15 L20,7 L6,7 Z M4,5 L22,5 L22,17 L4,17 L4,5 Z M2,19 L24,19 L24,21 L2,21 L2,19 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Computer</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="standard_color10">Computer</div> <!-- Standard -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="standard_color11"
                                             focusable="false">
                                             <path
                                                 d="M9,20 L17,20 L17,22 L9,22 L9,20 Z M4,6 L4,16 L22,16 L22,6 L4,6 Z M2,4 L24,4 L24,18 L2,18 L2,4 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">TV</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="standard_color12">TV</div> <!-- Standard -->
                                     </div>
                                 </td>
                                 <td class="planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__supportedDevicesCell"
                                     role="cell"
                                     data-uia="plan-grid-feature-table-cell+supportedDevices-text_4_stream_name"
                                     aria-label="Premium">
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="premium_color5"
                                             focusable="false">
                                             <path
                                                 d="M18,22.0233 L18,4.0003 L8,4.0003 L8,22.0233 L18,22.0233 Z M6,22.9683 L6,3.0543 C6,2.46041082 6.48370624,2.0003 7.057,2.0003 L18.943,2.0003 C19.5162938,2.0003 20,2.46041082 20,3.0543 L20,22.9683 C20,23.5564915 19.5215213,24.0233 18.943,24.0233 L7.057,24.0233 C6.4784787,24.0233 6,23.5564915 6,22.9683 Z M13,18.023 C13.553,18.023 14,18.471 14,19.023 C14,19.575 13.553,20.023 13,20.023 C12.447,20.023 12,19.575 12,19.023 C12,18.471 12.447,18.023 13,18.023 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Phone</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="premium_color6">Phone</div> <!-- Premium -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="premium_color7"
                                             focusable="false">
                                             <path
                                                 d="M22.0003,19 L22.0003,7 L4.0003,7 L4.0003,19 L22.0003,19 Z M21,13 C21,13.552 20.553,14 20,14 C19.447,14 19,13.552 19,13 C19,12.448 19.447,12 20,12 C20.553,12 21,12.448 21,13 Z M22.9453,21 L3.0543,21 C2.46343187,21 2.0003,20.5190554 2.0003,19.944 L2.0003,6.056 C2.0003,5.48094463 2.46343187,5 3.0543,5 L22.9453,5 C23.5305389,5 24.0003,5.47563312 24.0003,6.056 L24.0003,19.944 C24.0003,20.5243669 23.5305389,21 22.9453,21 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="premium_color8">Tablet</div> <!-- Premium -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="premium_color9"
                                             focusable="false">
                                             <path
                                                 d="M6,7 L6,15 L20,15 L20,7 L6,7 Z M4,5 L22,5 L22,17 L4,17 L4,5 Z M2,19 L24,19 L24,21 L2,21 L2,19 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">Computer</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="premium_color10">Computer</div> <!-- Premium -->
                                     </div>
-                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon"
+                                    <div><svg viewBox="0 0 26 26" class="planGrid__supportedDevicesIcon" id="premium_color11"
                                             focusable="false">
                                             <path
                                                 d="M9,20 L17,20 L17,22 L9,22 L9,20 Z M4,6 L4,16 L22,16 L22,6 L4,6 Z M2,4 L24,4 L24,18 L2,18 L2,4 Z">
                                             </path>
                                         </svg>
-                                        <div class="planGrid__supportedDevicesLabel">TV</div>
+                                        <div class="planGrid__supportedDevicesLabel" id="premium_color12">TV</div> <!-- Premium -->
                                     </div>
                                 </td>
                             </tr>
@@ -431,7 +430,560 @@
         </div>
     </div>
 
+    <script>
+        function change_color(number){
+            if (number == 1){
+                document.getElementById("mobile_color1").style.color = "#e50914";
+                document.getElementById("mobile_color1").style.fill = "#e50914";
+                document.getElementById("mobile_color1").style.borderColor = "#e50914";
+                document.getElementById("mobile_color2").style.color = "#e50914";
+                document.getElementById("mobile_color2").style.fill = "#e50914";
+                document.getElementById("mobile_color2").style.borderColor = "#e50914";
+                document.getElementById("mobile_color3").style.color = "#e50914";
+                document.getElementById("mobile_color3").style.fill = "#e50914";
+                document.getElementById("mobile_color3").style.borderColor = "#e50914";
+                document.getElementById("mobile_color4").style.color = "#e50914";
+                document.getElementById("mobile_color4").style.fill = "#e50914";
+                document.getElementById("mobile_color4").style.borderColor = "#e50914";
+                document.getElementById("mobile_color5").style.color = "#e50914";
+                document.getElementById("mobile_color5").style.fill = "#e50914";
+                document.getElementById("mobile_color5").style.borderColor = "#e50914";
+                document.getElementById("mobile_color6").style.color = "#e50914";
+                document.getElementById("mobile_color6").style.fill = "#e50914";
+                document.getElementById("mobile_color6").style.borderColor = "#e50914";
+                document.getElementById("mobile_color7").style.color = "#e50914";
+                document.getElementById("mobile_color7").style.fill = "#e50914";
+                document.getElementById("mobile_color7").style.borderColor = "#e50914";
+                document.getElementById("mobile_color8").style.color = "#e50914";
+                document.getElementById("mobile_color8").style.fill = "#e50914";
+                document.getElementById("mobile_color8").style.borderColor = "#e50914";
 
+                document.getElementById("basic_color1").style.color = "#7d8c98";
+                document.getElementById("basic_color1").style.fill = "#7d8c98";
+                document.getElementById("basic_color1").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color2").style.color = "#7d8c98";
+                document.getElementById("basic_color2").style.fill = "#7d8c98";
+                document.getElementById("basic_color2").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color3").style.color = "#7d8c98";
+                document.getElementById("basic_color3").style.fill = "#7d8c98";
+                document.getElementById("basic_color3").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color4").style.color = "#7d8c98";
+                document.getElementById("basic_color4").style.fill = "#7d8c98";
+                document.getElementById("basic_color4").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color5").style.color = "#7d8c98";
+                document.getElementById("basic_color5").style.fill = "#7d8c98";
+                document.getElementById("basic_color5").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color6").style.color = "#7d8c98";
+                document.getElementById("basic_color6").style.fill = "#7d8c98";
+                document.getElementById("basic_color6").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color7").style.color = "#7d8c98";
+                document.getElementById("basic_color7").style.fill = "#7d8c98";
+                document.getElementById("basic_color7").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color8").style.color = "#7d8c98";
+                document.getElementById("basic_color8").style.fill = "#7d8c98";
+                document.getElementById("basic_color8").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color9").style.color = "#7d8c98";
+                document.getElementById("basic_color9").style.fill = "#7d8c98";
+                document.getElementById("basic_color9").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color10").style.color = "#7d8c98";
+                document.getElementById("basic_color10").style.fill = "#7d8c98";
+                document.getElementById("basic_color10").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color11").style.color = "#7d8c98";
+                document.getElementById("basic_color11").style.fill = "#7d8c98";
+                document.getElementById("basic_color11").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color12").style.color = "#7d8c98";
+                document.getElementById("basic_color12").style.fill = "#7d8c98";
+                document.getElementById("basic_color12").style.borderColor = "#7d8c98";
+
+                document.getElementById("standard_color1").style.color = "#7d8c98";
+                document.getElementById("standard_color1").style.fill = "#7d8c98";
+                document.getElementById("standard_color1").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color2").style.color = "#7d8c98";
+                document.getElementById("standard_color2").style.fill = "#7d8c98";
+                document.getElementById("standard_color2").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color3").style.color = "#7d8c98";
+                document.getElementById("standard_color3").style.fill = "#7d8c98";
+                document.getElementById("standard_color3").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color4").style.color = "#7d8c98";
+                document.getElementById("standard_color4").style.fill = "#7d8c98";
+                document.getElementById("standard_color4").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color5").style.color = "#7d8c98";
+                document.getElementById("standard_color5").style.fill = "#7d8c98";
+                document.getElementById("standard_color5").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color6").style.color = "#7d8c98";
+                document.getElementById("standard_color6").style.fill = "#7d8c98";
+                document.getElementById("standard_color6").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color7").style.color = "#7d8c98";
+                document.getElementById("standard_color7").style.fill = "#7d8c98";
+                document.getElementById("standard_color7").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color8").style.color = "#7d8c98";
+                document.getElementById("standard_color8").style.fill = "#7d8c98";
+                document.getElementById("standard_color8").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color9").style.color = "#7d8c98";
+                document.getElementById("standard_color9").style.fill = "#7d8c98";
+                document.getElementById("standard_color9").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color10").style.color = "#7d8c98";
+                document.getElementById("standard_color10").style.fill = "#7d8c98";
+                document.getElementById("standard_color10").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color11").style.color = "#7d8c98";
+                document.getElementById("standard_color11").style.fill = "#7d8c98";
+                document.getElementById("standard_color11").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color12").style.color = "#7d8c98";
+                document.getElementById("standard_color12").style.fill = "#7d8c98";
+                document.getElementById("standard_color12").style.borderColor = "#7d8c98";
+
+                document.getElementById("premium_color1").style.color = "#7d8c98";
+                document.getElementById("premium_color1").style.fill = "#7d8c98";
+                document.getElementById("premium_color1").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color2").style.color = "#7d8c98";
+                document.getElementById("premium_color2").style.fill = "#7d8c98";
+                document.getElementById("premium_color2").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color3").style.color = "#7d8c98";
+                document.getElementById("premium_color3").style.fill = "#7d8c98";
+                document.getElementById("premium_color3").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color4").style.color = "#7d8c98";
+                document.getElementById("premium_color4").style.fill = "#7d8c98";
+                document.getElementById("premium_color4").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color5").style.color = "#7d8c98";
+                document.getElementById("premium_color5").style.fill = "#7d8c98";
+                document.getElementById("premium_color5").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color6").style.color = "#7d8c98";
+                document.getElementById("premium_color6").style.fill = "#7d8c98";
+                document.getElementById("premium_color6").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color7").style.color = "#7d8c98";
+                document.getElementById("premium_color7").style.fill = "#7d8c98";
+                document.getElementById("premium_color7").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color8").style.color = "#7d8c98";
+                document.getElementById("premium_color8").style.fill = "#7d8c98";
+                document.getElementById("premium_color8").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color9").style.color = "#7d8c98";
+                document.getElementById("premium_color9").style.fill = "#7d8c98";
+                document.getElementById("premium_color9").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color10").style.color = "#7d8c98";
+                document.getElementById("premium_color10").style.fill = "#7d8c98";
+                document.getElementById("premium_color10").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color11").style.color = "#7d8c98";
+                document.getElementById("premium_color11").style.fill = "#7d8c98";
+                document.getElementById("premium_color11").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color12").style.color = "#7d8c98";
+                document.getElementById("premium_color12").style.fill = "#7d8c98";
+                document.getElementById("premium_color12").style.borderColor = "#7d8c98";
+            }
+            else if (number == 2){
+                document.getElementById("mobile_color1").style.color = "#7d8c98";
+                document.getElementById("mobile_color1").style.fill = "#7d8c98";
+                document.getElementById("mobile_color1").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color2").style.color = "#7d8c98";
+                document.getElementById("mobile_color2").style.fill = "#7d8c98";
+                document.getElementById("mobile_color2").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color3").style.color = "#7d8c98";
+                document.getElementById("mobile_color3").style.fill = "#7d8c98";
+                document.getElementById("mobile_color3").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color4").style.color = "#7d8c98";
+                document.getElementById("mobile_color4").style.fill = "#7d8c98";
+                document.getElementById("mobile_color4").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color5").style.color = "#7d8c98";
+                document.getElementById("mobile_color5").style.fill = "#7d8c98";
+                document.getElementById("mobile_color5").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color6").style.color = "#7d8c98";
+                document.getElementById("mobile_color6").style.fill = "#7d8c98";
+                document.getElementById("mobile_color6").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color7").style.color = "#7d8c98";
+                document.getElementById("mobile_color7").style.fill = "#7d8c98";
+                document.getElementById("mobile_color7").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color8").style.color = "#7d8c98";
+                document.getElementById("mobile_color8").style.fill = "#7d8c98";
+                document.getElementById("mobile_color8").style.borderColor = "#7d8c98";
+
+                document.getElementById("basic_color1").style.color = "#e50914";
+                document.getElementById("basic_color1").style.fill = "#e50914";
+                document.getElementById("basic_color1").style.borderColor = "#e50914";
+                document.getElementById("basic_color2").style.color = "#e50914";
+                document.getElementById("basic_color2").style.fill = "#e50914";
+                document.getElementById("basic_color2").style.borderColor = "#e50914";
+                document.getElementById("basic_color3").style.color = "#e50914";
+                document.getElementById("basic_color3").style.fill = "#e50914";
+                document.getElementById("basic_color3").style.borderColor = "#e50914";
+                document.getElementById("basic_color4").style.color = "#e50914";
+                document.getElementById("basic_color4").style.fill = "#e50914";
+                document.getElementById("basic_color4").style.borderColor = "#e50914";
+                document.getElementById("basic_color5").style.color = "#e50914";
+                document.getElementById("basic_color5").style.fill = "#e50914";
+                document.getElementById("basic_color5").style.borderColor = "#e50914";
+                document.getElementById("basic_color6").style.color = "#e50914";
+                document.getElementById("basic_color6").style.fill = "#e50914";
+                document.getElementById("basic_color6").style.borderColor = "#e50914";
+                document.getElementById("basic_color7").style.color = "#e50914";
+                document.getElementById("basic_color7").style.fill = "#e50914";
+                document.getElementById("basic_color7").style.borderColor = "#e50914";
+                document.getElementById("basic_color8").style.color = "#e50914";
+                document.getElementById("basic_color8").style.fill = "#e50914";
+                document.getElementById("basic_color8").style.borderColor = "#e50914";
+                document.getElementById("basic_color9").style.color = "#e50914";
+                document.getElementById("basic_color9").style.fill = "#e50914";
+                document.getElementById("basic_color9").style.borderColor = "#e50914";
+                document.getElementById("basic_color10").style.color = "#e50914";
+                document.getElementById("basic_color10").style.fill = "#e50914";
+                document.getElementById("basic_color10").style.borderColor = "#e50914";
+                document.getElementById("basic_color11").style.color = "#e50914";
+                document.getElementById("basic_color11").style.fill = "#e50914";
+                document.getElementById("basic_color11").style.borderColor = "#e50914";
+                document.getElementById("basic_color12").style.color = "#e50914";
+                document.getElementById("basic_color12").style.fill = "#e50914";
+                document.getElementById("basic_color12").style.borderColor = "#e50914";
+
+                document.getElementById("standard_color1").style.color = "#7d8c98";
+                document.getElementById("standard_color1").style.fill = "#7d8c98";
+                document.getElementById("standard_color1").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color2").style.color = "#7d8c98";
+                document.getElementById("standard_color2").style.fill = "#7d8c98";
+                document.getElementById("standard_color2").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color3").style.color = "#7d8c98";
+                document.getElementById("standard_color3").style.fill = "#7d8c98";
+                document.getElementById("standard_color3").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color4").style.color = "#7d8c98";
+                document.getElementById("standard_color4").style.fill = "#7d8c98";
+                document.getElementById("standard_color4").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color5").style.color = "#7d8c98";
+                document.getElementById("standard_color5").style.fill = "#7d8c98";
+                document.getElementById("standard_color5").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color6").style.color = "#7d8c98";
+                document.getElementById("standard_color6").style.fill = "#7d8c98";
+                document.getElementById("standard_color6").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color7").style.color = "#7d8c98";
+                document.getElementById("standard_color7").style.fill = "#7d8c98";
+                document.getElementById("standard_color7").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color8").style.color = "#7d8c98";
+                document.getElementById("standard_color8").style.fill = "#7d8c98";
+                document.getElementById("standard_color8").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color9").style.color = "#7d8c98";
+                document.getElementById("standard_color9").style.fill = "#7d8c98";
+                document.getElementById("standard_color9").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color10").style.color = "#7d8c98";
+                document.getElementById("standard_color10").style.fill = "#7d8c98";
+                document.getElementById("standard_color10").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color11").style.color = "#7d8c98";
+                document.getElementById("standard_color11").style.fill = "#7d8c98";
+                document.getElementById("standard_color11").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color12").style.color = "#7d8c98";
+                document.getElementById("standard_color12").style.fill = "#7d8c98";
+                document.getElementById("standard_color12").style.borderColor = "#7d8c98";
+
+                document.getElementById("premium_color1").style.color = "#7d8c98";
+                document.getElementById("premium_color1").style.fill = "#7d8c98";
+                document.getElementById("premium_color1").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color2").style.color = "#7d8c98";
+                document.getElementById("premium_color2").style.fill = "#7d8c98";
+                document.getElementById("premium_color2").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color3").style.color = "#7d8c98";
+                document.getElementById("premium_color3").style.fill = "#7d8c98";
+                document.getElementById("premium_color3").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color4").style.color = "#7d8c98";
+                document.getElementById("premium_color4").style.fill = "#7d8c98";
+                document.getElementById("premium_color4").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color5").style.color = "#7d8c98";
+                document.getElementById("premium_color5").style.fill = "#7d8c98";
+                document.getElementById("premium_color5").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color6").style.color = "#7d8c98";
+                document.getElementById("premium_color6").style.fill = "#7d8c98";
+                document.getElementById("premium_color6").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color7").style.color = "#7d8c98";
+                document.getElementById("premium_color7").style.fill = "#7d8c98";
+                document.getElementById("premium_color7").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color8").style.color = "#7d8c98";
+                document.getElementById("premium_color8").style.fill = "#7d8c98";
+                document.getElementById("premium_color8").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color9").style.color = "#7d8c98";
+                document.getElementById("premium_color9").style.fill = "#7d8c98";
+                document.getElementById("premium_color9").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color10").style.color = "#7d8c98";
+                document.getElementById("premium_color10").style.fill = "#7d8c98";
+                document.getElementById("premium_color10").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color11").style.color = "#7d8c98";
+                document.getElementById("premium_color11").style.fill = "#7d8c98";
+                document.getElementById("premium_color11").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color12").style.color = "#7d8c98";
+                document.getElementById("premium_color12").style.fill = "#7d8c98";
+                document.getElementById("premium_color12").style.borderColor = "#7d8c98";
+            }
+
+            else if (number == 3){
+                document.getElementById("mobile_color1").style.color = "#7d8c98";
+                document.getElementById("mobile_color1").style.fill = "#7d8c98";
+                document.getElementById("mobile_color1").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color2").style.color = "#7d8c98";
+                document.getElementById("mobile_color2").style.fill = "#7d8c98";
+                document.getElementById("mobile_color2").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color3").style.color = "#7d8c98";
+                document.getElementById("mobile_color3").style.fill = "#7d8c98";
+                document.getElementById("mobile_color3").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color4").style.color = "#7d8c98";
+                document.getElementById("mobile_color4").style.fill = "#7d8c98";
+                document.getElementById("mobile_color4").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color5").style.color = "#7d8c98";
+                document.getElementById("mobile_color5").style.fill = "#7d8c98";
+                document.getElementById("mobile_color5").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color6").style.color = "#7d8c98";
+                document.getElementById("mobile_color6").style.fill = "#7d8c98";
+                document.getElementById("mobile_color6").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color7").style.color = "#7d8c98";
+                document.getElementById("mobile_color7").style.fill = "#7d8c98";
+                document.getElementById("mobile_color7").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color8").style.color = "#7d8c98";
+                document.getElementById("mobile_color8").style.fill = "#7d8c98";
+                document.getElementById("mobile_color8").style.borderColor = "#7d8c98";
+
+                document.getElementById("basic_color1").style.color = "#7d8c98";
+                document.getElementById("basic_color1").style.fill = "#7d8c98";
+                document.getElementById("basic_color1").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color2").style.color = "#7d8c98";
+                document.getElementById("basic_color2").style.fill = "#7d8c98";
+                document.getElementById("basic_color2").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color3").style.color = "#7d8c98";
+                document.getElementById("basic_color3").style.fill = "#7d8c98";
+                document.getElementById("basic_color3").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color4").style.color = "#7d8c98";
+                document.getElementById("basic_color4").style.fill = "#7d8c98";
+                document.getElementById("basic_color4").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color5").style.color = "#7d8c98";
+                document.getElementById("basic_color5").style.fill = "#7d8c98";
+                document.getElementById("basic_color5").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color6").style.color = "#7d8c98";
+                document.getElementById("basic_color6").style.fill = "#7d8c98";
+                document.getElementById("basic_color6").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color7").style.color = "#7d8c98";
+                document.getElementById("basic_color7").style.fill = "#7d8c98";
+                document.getElementById("basic_color7").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color8").style.color = "#7d8c98";
+                document.getElementById("basic_color8").style.fill = "#7d8c98";
+                document.getElementById("basic_color8").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color9").style.color = "#7d8c98";
+                document.getElementById("basic_color9").style.fill = "#7d8c98";
+                document.getElementById("basic_color9").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color10").style.color = "#7d8c98";
+                document.getElementById("basic_color10").style.fill = "#7d8c98";
+                document.getElementById("basic_color10").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color11").style.color = "#7d8c98";
+                document.getElementById("basic_color11").style.fill = "#7d8c98";
+                document.getElementById("basic_color11").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color12").style.color = "#7d8c98";
+                document.getElementById("basic_color12").style.fill = "#7d8c98";
+                document.getElementById("basic_color12").style.borderColor = "#7d8c98";
+
+                document.getElementById("standard_color1").style.color = "#e50914";
+                document.getElementById("standard_color1").style.fill = "#e50914";
+                document.getElementById("standard_color1").style.borderColor = "#e50914";
+                document.getElementById("standard_color2").style.color = "#e50914";
+                document.getElementById("standard_color2").style.fill = "#e50914";
+                document.getElementById("standard_color2").style.borderColor = "#e50914";
+                document.getElementById("standard_color3").style.color = "#e50914";
+                document.getElementById("standard_color3").style.fill = "#e50914";
+                document.getElementById("standard_color3").style.borderColor = "#e50914";
+                document.getElementById("standard_color4").style.color = "#e50914";
+                document.getElementById("standard_color4").style.fill = "#e50914";
+                document.getElementById("standard_color4").style.borderColor = "#e50914";
+                document.getElementById("standard_color5").style.color = "#e50914";
+                document.getElementById("standard_color5").style.fill = "#e50914";
+                document.getElementById("standard_color5").style.borderColor = "#e50914";
+                document.getElementById("standard_color6").style.color = "#e50914";
+                document.getElementById("standard_color6").style.fill = "#e50914";
+                document.getElementById("standard_color6").style.borderColor = "#e50914";
+                document.getElementById("standard_color7").style.color = "#e50914";
+                document.getElementById("standard_color7").style.fill = "#e50914";
+                document.getElementById("standard_color7").style.borderColor = "#e50914";
+                document.getElementById("standard_color8").style.color = "#e50914";
+                document.getElementById("standard_color8").style.fill = "#e50914";
+                document.getElementById("standard_color8").style.borderColor = "#e50914";
+                document.getElementById("standard_color9").style.color = "#e50914";
+                document.getElementById("standard_color9").style.fill = "#e50914";
+                document.getElementById("standard_color9").style.borderColor = "#e50914";
+                document.getElementById("standard_color10").style.color = "#e50914";
+                document.getElementById("standard_color10").style.fill = "#e50914";
+                document.getElementById("standard_color10").style.borderColor = "#e50914";
+                document.getElementById("standard_color11").style.color = "#e50914";
+                document.getElementById("standard_color11").style.fill = "#e50914";
+                document.getElementById("standard_color11").style.borderColor = "#e50914";
+                document.getElementById("standard_color12").style.color = "#e50914";
+                document.getElementById("standard_color12").style.fill = "#e50914";
+                document.getElementById("standard_color12").style.borderColor = "#e50914";
+                
+                document.getElementById("premium_color1").style.color = "#7d8c98";
+                document.getElementById("premium_color1").style.fill = "#7d8c98";
+                document.getElementById("premium_color1").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color2").style.color = "#7d8c98";
+                document.getElementById("premium_color2").style.fill = "#7d8c98";
+                document.getElementById("premium_color2").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color3").style.color = "#7d8c98";
+                document.getElementById("premium_color3").style.fill = "#7d8c98";
+                document.getElementById("premium_color3").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color4").style.color = "#7d8c98";
+                document.getElementById("premium_color4").style.fill = "#7d8c98";
+                document.getElementById("premium_color4").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color5").style.color = "#7d8c98";
+                document.getElementById("premium_color5").style.fill = "#7d8c98";
+                document.getElementById("premium_color5").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color6").style.color = "#7d8c98";
+                document.getElementById("premium_color6").style.fill = "#7d8c98";
+                document.getElementById("premium_color6").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color7").style.color = "#7d8c98";
+                document.getElementById("premium_color7").style.fill = "#7d8c98";
+                document.getElementById("premium_color7").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color8").style.color = "#7d8c98";
+                document.getElementById("premium_color8").style.fill = "#7d8c98";
+                document.getElementById("premium_color8").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color9").style.color = "#7d8c98";
+                document.getElementById("premium_color9").style.fill = "#7d8c98";
+                document.getElementById("premium_color9").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color10").style.color = "#7d8c98";
+                document.getElementById("premium_color10").style.fill = "#7d8c98";
+                document.getElementById("premium_color10").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color11").style.color = "#7d8c98";
+                document.getElementById("premium_color11").style.fill = "#7d8c98";
+                document.getElementById("premium_color11").style.borderColor = "#7d8c98";
+                document.getElementById("premium_color12").style.color = "#7d8c98";
+                document.getElementById("premium_color12").style.fill = "#7d8c98";
+                document.getElementById("premium_color12").style.borderColor = "#7d8c98";
+            }
+
+            else if (number == 4){
+                document.getElementById("mobile_color1").style.color = "#7d8c98";
+                document.getElementById("mobile_color1").style.fill = "#7d8c98";
+                document.getElementById("mobile_color1").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color2").style.color = "#7d8c98";
+                document.getElementById("mobile_color2").style.fill = "#7d8c98";
+                document.getElementById("mobile_color2").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color3").style.color = "#7d8c98";
+                document.getElementById("mobile_color3").style.fill = "#7d8c98";
+                document.getElementById("mobile_color3").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color4").style.color = "#7d8c98";
+                document.getElementById("mobile_color4").style.fill = "#7d8c98";
+                document.getElementById("mobile_color4").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color5").style.color = "#7d8c98";
+                document.getElementById("mobile_color5").style.fill = "#7d8c98";
+                document.getElementById("mobile_color5").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color6").style.color = "#7d8c98";
+                document.getElementById("mobile_color6").style.fill = "#7d8c98";
+                document.getElementById("mobile_color6").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color7").style.color = "#7d8c98";
+                document.getElementById("mobile_color7").style.fill = "#7d8c98";
+                document.getElementById("mobile_color7").style.borderColor = "#7d8c98";
+                document.getElementById("mobile_color8").style.color = "#7d8c98";
+                document.getElementById("mobile_color8").style.fill = "#7d8c98";
+                document.getElementById("mobile_color8").style.borderColor = "#7d8c98";
+
+                document.getElementById("basic_color1").style.color = "#7d8c98";
+                document.getElementById("basic_color1").style.fill = "#7d8c98";
+                document.getElementById("basic_color1").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color2").style.color = "#7d8c98";
+                document.getElementById("basic_color2").style.fill = "#7d8c98";
+                document.getElementById("basic_color2").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color3").style.color = "#7d8c98";
+                document.getElementById("basic_color3").style.fill = "#7d8c98";
+                document.getElementById("basic_color3").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color4").style.color = "#7d8c98";
+                document.getElementById("basic_color4").style.fill = "#7d8c98";
+                document.getElementById("basic_color4").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color5").style.color = "#7d8c98";
+                document.getElementById("basic_color5").style.fill = "#7d8c98";
+                document.getElementById("basic_color5").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color6").style.color = "#7d8c98";
+                document.getElementById("basic_color6").style.fill = "#7d8c98";
+                document.getElementById("basic_color6").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color7").style.color = "#7d8c98";
+                document.getElementById("basic_color7").style.fill = "#7d8c98";
+                document.getElementById("basic_color7").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color8").style.color = "#7d8c98";
+                document.getElementById("basic_color8").style.fill = "#7d8c98";
+                document.getElementById("basic_color8").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color9").style.color = "#7d8c98";
+                document.getElementById("basic_color9").style.fill = "#7d8c98";
+                document.getElementById("basic_color9").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color10").style.color = "#7d8c98";
+                document.getElementById("basic_color10").style.fill = "#7d8c98";
+                document.getElementById("basic_color10").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color11").style.color = "#7d8c98";
+                document.getElementById("basic_color11").style.fill = "#7d8c98";
+                document.getElementById("basic_color11").style.borderColor = "#7d8c98";
+                document.getElementById("basic_color12").style.color = "#7d8c98";
+                document.getElementById("basic_color12").style.fill = "#7d8c98";
+                document.getElementById("basic_color12").style.borderColor = "#7d8c98";
+
+                document.getElementById("standard_color1").style.color = "#7d8c98";
+                document.getElementById("standard_color1").style.fill = "#7d8c98";
+                document.getElementById("standard_color1").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color2").style.color = "#7d8c98";
+                document.getElementById("standard_color2").style.fill = "#7d8c98";
+                document.getElementById("standard_color2").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color3").style.color = "#7d8c98";
+                document.getElementById("standard_color3").style.fill = "#7d8c98";
+                document.getElementById("standard_color3").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color4").style.color = "#7d8c98";
+                document.getElementById("standard_color4").style.fill = "#7d8c98";
+                document.getElementById("standard_color4").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color5").style.color = "#7d8c98";
+                document.getElementById("standard_color5").style.fill = "#7d8c98";
+                document.getElementById("standard_color5").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color6").style.color = "#7d8c98";
+                document.getElementById("standard_color6").style.fill = "#7d8c98";
+                document.getElementById("standard_color6").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color7").style.color = "#7d8c98";
+                document.getElementById("standard_color7").style.fill = "#7d8c98";
+                document.getElementById("standard_color7").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color8").style.color = "#7d8c98";
+                document.getElementById("standard_color8").style.fill = "#7d8c98";
+                document.getElementById("standard_color8").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color9").style.color = "#7d8c98";
+                document.getElementById("standard_color9").style.fill = "#7d8c98";
+                document.getElementById("standard_color9").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color10").style.color = "#7d8c98";
+                document.getElementById("standard_color10").style.fill = "#7d8c98";
+                document.getElementById("standard_color10").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color11").style.color = "#7d8c98";
+                document.getElementById("standard_color11").style.fill = "#7d8c98";
+                document.getElementById("standard_color11").style.borderColor = "#7d8c98";
+                document.getElementById("standard_color12").style.color = "#7d8c98";
+                document.getElementById("standard_color12").style.fill = "#7d8c98";
+                document.getElementById("standard_color12").style.borderColor = "#7d8c98";
+
+                document.getElementById("premium_color1").style.color = "#e50914";
+                document.getElementById("premium_color1").style.fill = "#e50914";
+                document.getElementById("premium_color1").style.borderColor = "#e50914";
+                document.getElementById("premium_color2").style.color = "#e50914";
+                document.getElementById("premium_color2").style.fill = "#e50914";
+                document.getElementById("premium_color2").style.borderColor = "#e50914";
+                document.getElementById("premium_color3").style.color = "#e50914";
+                document.getElementById("premium_color3").style.fill = "#e50914";
+                document.getElementById("premium_color3").style.borderColor = "#e50914";
+                document.getElementById("premium_color4").style.color = "#e50914";
+                document.getElementById("premium_color4").style.fill = "#e50914";
+                document.getElementById("premium_color4").style.borderColor = "#e50914";
+                document.getElementById("premium_color5").style.color = "#e50914";
+                document.getElementById("premium_color5").style.fill = "#e50914";
+                document.getElementById("premium_color5").style.borderColor = "#e50914";
+                document.getElementById("premium_color6").style.color = "#e50914";
+                document.getElementById("premium_color6").style.fill = "#e50914";
+                document.getElementById("premium_color6").style.borderColor = "#e50914";
+                document.getElementById("premium_color7").style.color = "#e50914";
+                document.getElementById("premium_color7").style.fill = "#e50914";
+                document.getElementById("premium_color7").style.borderColor = "#e50914";
+                document.getElementById("premium_color8").style.color = "#e50914";
+                document.getElementById("premium_color8").style.fill = "#e50914";
+                document.getElementById("premium_color8").style.borderColor = "#e50914";
+                document.getElementById("premium_color9").style.color = "#e50914";
+                document.getElementById("premium_color9").style.fill = "#e50914";
+                document.getElementById("premium_color9").style.borderColor = "#e50914";
+                document.getElementById("premium_color10").style.color = "#e50914";
+                document.getElementById("premium_color10").style.fill = "#e50914";
+                document.getElementById("premium_color10").style.borderColor = "#e50914";
+                document.getElementById("premium_color11").style.color = "#e50914";
+                document.getElementById("premium_color11").style.fill = "#e50914";
+                document.getElementById("premium_color11").style.borderColor = "#e50914";
+                document.getElementById("premium_color12").style.color = "#e50914";
+                document.getElementById("premium_color12").style.fill = "#e50914";
+                document.getElementById("premium_color12").style.borderColor = "#e50914";
+            }
+        }
+    </script>
 </body>
 
 </html>
