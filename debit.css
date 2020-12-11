@@ -423,3 +423,8 @@ div.basicLayout .nf-btn-secondary {
     width: 100%;
     line-height: 19px;
 }
+
+.error>.nfTextField,
+.nfTextField.error {
+    border-color: #b92d2b;
+}
