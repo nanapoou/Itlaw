@@ -57,7 +57,7 @@
 
 <body>
     <div class="navbar ">
-        <a href="web.html" class="svg-nfLogo signupBasicHeader" data-uia="netflix-header-svg-logo">
+        <a href="index.html" class="svg-nfLogo signupBasicHeader" data-uia="netflix-header-svg-logo">
             <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="true">
                 <g id="netflix-logo">
                     <path
@@ -432,6 +432,7 @@
     </div>
 
     <script>
+        window.onload = change_color(4);
         function change_color(number){
             if (number == 1){
                 document.getElementById("continue_page").setAttribute("onclick", "location.href='debit.html'")
