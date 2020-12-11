@@ -85,7 +85,8 @@ body {
     display: flex;
     background-position: center;
     min-height: 710px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    border-bottom: 8px solid #222;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(https://assets.nflxext.com/ffe/siteui/vlv3/9be55430-39e9-4841-8d38-7b3f5acf4c97/03f02841-edef-4d5a-84a0-5df3a79b002e/TH-en-20201207-popsignuptwoweeks-perspective_alpha_website_large.jpg);
 }
 
 .area {
@@ -649,6 +650,164 @@ img {
     max-height: 54%;
     position: absolute;
     top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.animation-card.watchOnDevice .our-story-card-video,
+.animation-card.watchOnTv .our-story-card-video {
+    width: 100%;
+    height: 100%;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    padding: .25em .65em;
+    border: 2px solid rgba(255, 255, 255, .25);
+    -webkit-box-shadow: 0 0 2em 0 #000;
+    -moz-box-shadow: 0 0 2em 0 #000;
+    box-shadow: 0 0 2em 0 #000;
+    -webkit-border-radius: .75em;
+    -moz-border-radius: .75em;
+    border-radius: .75em;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-image {
+    margin: 0 1em 0 0;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: .3em 0;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text .text-0 {
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text .text-1,
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text .text-2 {
+    color: #0071eb;
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation:after {
+    width: 3em;
+    height: 6em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -moz-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.center-pixel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-image img {
+    height: 3em;
+}
+
+.animation-card.flipped .animation-card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+}
+
+.animation-card.watchOnDevice .our-story-card-img,
+.animation-card.watchOnTv .our-story-card-img {
+    position: relative;
+    z-index: 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.animation-card.watchOnDevice .our-story-card-animation {
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
