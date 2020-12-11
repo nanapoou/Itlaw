@@ -434,51 +434,51 @@ div.basicLayout .nf-btn-secondary {
 /******************************* MOBILE COLOR *********************************/
 
 .mobile_color1{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color2{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color3{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color4{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color5{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color6{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color7{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 .mobile_color8{
-    color:#7d8c98;
-    fill: #7d8c98;
-    border-color: #7d8c98;
+    color:blue;
+    fill: blue;
+    border-color: blue;
 }
 
 /******************************** BASIC COLOR *******************************/
@@ -631,94 +631,71 @@ div.basicLayout .nf-btn-secondary {
 /**************************** PREMIUM COLOR **************************************/
 
 .premium_color1{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color2{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color3{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color4{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color5{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 .premium_color6{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color7{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 .premium_color8{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color9{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color10{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color11{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
 
 .premium_color12{
-    color:#e50914 ;
-    fill: #e50914 ;
-    border-color: #e50914 ;
+    color:#7d8c98;
+    fill: #7d8c98;
+    border-color: #7d8c98;
 }
-
-.planGrid__planInput:checked+.planGrid__planLabel {
-    opacity: 1;
-}
-
-.planGrid__cell.planGrid__cell--isSelected:not(.planGrid__featureCell){
-    color: gray;
-    fill: gray;
-    border-color: gray;
-
-}
-
-.planGrid__cell--isSelected .planGrid__planMaxScreenCountLabel {
-    color: gray;
-    border-color: gray;
-}
-
-/* td#premium_color1.planGrid__cell planGrid__cell--hasIncreasedWeight planGrid__stringCell{
-    color: rgb(229, 9, 20);
-    fill: rgb(229, 9, 20);
-    border-color: rgb(229, 9, 20);
-} */
-

